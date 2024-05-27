@@ -13,6 +13,22 @@ header {
     text-align: center;
 }
 
+header.profile{
+    display: inline-block;
+    text-align: center;
+}
+
+header .profile-picture {
+    width: 100px; /* Adjust the width to your desired size */
+    height: 100px; /* Adjust the height to your desired size */
+    object-fit: cover;
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure proper centering */
+    border-radius: 50%; /* Clip the image to a circle */
+    border: 3px solid #fff; /* Optional: Adds a white border around the picture */
+}
+
+
 header h1 {
     margin: 0;
 }
