@@ -18,7 +18,7 @@ header.profile{
     text-align: center;
 }
 
-header .profile-picture {
+.profile-picture img {
     width: 100px; /* Adjust the width to your desired size */
     height: 100px; /* Adjust the height to your desired size */
     object-fit: cover;
