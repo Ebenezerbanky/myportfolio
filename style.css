@@ -64,7 +64,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    color: white; /* Ensure text color contrasts with the background */
+    color: whitesmoke; /* Ensure text color contrasts with the background */
     padding: 50px; /* Add padding to ensure content is not too close to the edges */
 }
 
@@ -73,7 +73,7 @@ section {
     padding: 2rem;
     margin: 1rem auto;
     max-width: 800px;
-    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+    background: white (255, 255, 255, 0.8); /* Semi-transparent background for readability */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
