@@ -1,0 +1,36 @@
+<section id="contact" class="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <form id="contact-form">
+        <div class="input-box">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+        </div>
+        <div class="input-box">
+            <input type="number" name="number" placeholder="Phone Number" required>
+            <input type="text" name="subject" placeholder="Email Subject" required>
+        </div>
+        <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        // Initialize EmailJS with your user ID
+        emailjs.init("gElZBL18i5EFwVMx3");
+
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Service ID, Template ID
+            const serviceID = 'service_6jotgng';
+            const templateID = 'template_98l8hhh';
+
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(function() {
+                    alert('Message sent successfully!');
+                }, function(error) {
+                    alert('Failed to send message. Error: ' + JSON.stringify(error));
+                });
+        });
+    </script>
+</section>
