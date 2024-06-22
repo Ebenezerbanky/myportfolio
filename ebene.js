@@ -12,7 +12,7 @@ window.onscroll = () => {
 }
 
 const typed = new Typed('.multiple-text',  {
-    strings: ['A Front-end Web Developer', 'An Adminstrative Assitant', 'A Financial Secretary', 'A Writter', ''],
+    strings: ['A Front-end Web Developer', 'An Adminstrative Assistant', 'A Financial Secretary', 'A Writter', ''],
     typeSpeed: 80,
     backSpeed: 80,
     backDelay: 1200,
